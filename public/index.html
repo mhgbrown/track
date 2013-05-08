@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Track Test</title>
+  <link href="/assets/css/track.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="simple" data-track-with="simple">
+      SIMPLE CLICK
+  </div>
+  <div id="simple-extra" data-track-with="simple" data-track-info='{"foo": "bar"}' data-track-type="complex">
+      SIMPLE CLICK WITH EXTRA INFO
+  </div>
+  <div id="other-event" data-track-on="other-event" data-track-with="simple" data-track-info='{"foo": "bar"}' data-track-type="complex">
+      ON "other-event" TRIGGERED
+  </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="/assets/js/jquery.track.js"></script>
+<script src="/assets/js/jquery.track-test.js"></script>
+</body>
+</html>
